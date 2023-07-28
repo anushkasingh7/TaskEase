@@ -25,7 +25,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: tdBGColor,
+      backgroundColor: Color.fromARGB(255, 105, 105, 117),
       appBar: _buildAppBar(),
       body: Stack(
         children: [
@@ -46,7 +46,7 @@ class _HomeState extends State<Home> {
                           bottom: 20,
                         ),
                         child: Text(
-                          'All ToDos',
+                          'My ActionPlan',
                           style: TextStyle(
                             fontSize: 30,
                             fontWeight: FontWeight.w500,
@@ -94,8 +94,7 @@ class _HomeState extends State<Home> {
                   child: TextField(
                     controller: _todoController,
                     decoration: InputDecoration(
-                        hintText: 'Add a new todo item',
-                        border: InputBorder.none),
+                        hintText: 'Add your Tasks', border: InputBorder.none),
                   ),
                 ),
               ),
@@ -209,8 +208,8 @@ class _HomeState extends State<Home> {
           height: 40,
           width: 40,
           child: ClipRRect(
-            borderRadius: BorderRadius.circular(20),
-            child: Image.asset('assets/images/avatar.jpeg'),
+            borderRadius: BorderRadius.circular(30),
+            child: Image.asset('assets/images/nko.png'),
           ),
         ),
       ]),
